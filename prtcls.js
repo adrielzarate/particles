@@ -1,4 +1,4 @@
-function particles(canvasW, canvasH, ctx, customSettings) {
+function prtcls(canvasW, canvasH, ctx, customSettings) {
 
     let settings = {
         particlesQuantity: 200,

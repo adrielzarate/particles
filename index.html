@@ -2,32 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>particles</title>
+    <title>prtcls</title>
     <style>
-        canvas { border: red solid thin; }
+        body {
+            overflow: hidden;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <canvas id="canvas"></canvas>
-    <script src="particles.js"></script>
+    <script src="prtcls.js"></script>
     <script>
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-const W = canvas.width = 600;
-const H = canvas.height = 600;
+const W = canvas.width = window.innerWidth;
+const H = canvas.height = window.innerHeight;
 
-const particlesSettings = {
+const prtclsSettings = {
     particlesQuantity: 200,
     particleSize: 5, // px
-    particleShape: 'squad', // squad, circle, star, nothing
+    particleShape: 'star', // squad, circle, star, line
     particleMinSpeed: 0.2,
     particleMaxSpeed: 2,
     particleColor: '#000000',
     lineColor: 'rgba(0, 0, 0, .1)',
-    minLineDistance: 50
+    minLineDistance: 80
 };
 
-particles(W, H, ctx, particlesSettings);
+prtcls(W, H, ctx, prtclsSettings);
 
     </script>
 </body>
