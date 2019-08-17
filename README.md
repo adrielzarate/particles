@@ -3,6 +3,8 @@
 
 Small particles plugin in HTML5 canvas, based in the great library [particles.js](https://vincentgarreau.com/particles.js/)
 
+<img src="prtcls.jpg" width="1200"/>
+
 ## How to use
 
 Just include the js  file in your HTML and call the *prtcls* function with the canvas width, height and context
